@@ -1,0 +1,586 @@
+/* カラーテーマの定義（カスタムプロパティ） */
+:root {
+  --primary-color: #3498db;
+  --primary-hover: #2980b9;
+  --bg-light: #f4f4f4;
+  --bg-white: #fff;
+  --text-dark: #333;
+  --border-color: #ccc;
+}
+
+/* ページ全体の基本設定 */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  padding: 20px;
+  margin: 0;
+}
+
+/* 見出しのスタイル */
+h1, h2 {
+  text-align: center;
+  color: #222;
+}
+
+/* テキスト入力・セレクトボックス */
+input[type="text"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+/* ボタンのスタイル */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ナビゲーションボタン（ホームなど） */
+.home-button,
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-button:hover,
+.nav-link:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+/* ページ説明エリア */
+.site-description {
+  max-width: 720px;
+  margin: 30px auto 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+/* 検索結果エリア */
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* 検索結果カード */
+.machine-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+/* 検索結果リンク */
+.machine-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.machine-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 検索カード本体 */
+.machine {
+  width: 100%;
+  background-color: var(--bg-white);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* 検索結果の画像 */
+.machine-img {
+  width: 100%;
+  height: 240px;              /* 固定の高さで整える */
+  object-fit: cover;          /* 縦横比を維持しつつ枠内に収める */
+  aspect-ratio: 3 / 4;        /* 明示的に3:4比率を指定（ズレ防止） */
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* 検索結果タイトル */
+.machine h3 {
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+
+/* 検索結果の詳細情報 */
+.machine p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* 管理人プロフィールエリア */
+.admin-profile {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  border: 2px solid #ff9800;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  line-height: 1.9;
+  position: relative;
+}
+
+/* プロフィール見出し装飾 */
+.admin-profile::before {
+  content: "👑 PROFILE";
+  position: absolute;
+  top: -16px;
+  left: 20px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+/* プロフィール本文 */
+.admin-profile p {
+  margin: 10px 0;
+  padding-left: 12px;
+  border-left: 4px solid #ff9800;
+  background-color: rgba(255, 152, 0, 0.05);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.admin-profile strong {
+  color: #d35400;
+}
+
+/* プロフィール画像 */
+.admin-icon {
+  float: right;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+  border: 3px solid #ff9800;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ハイエナカード全体のレイアウト */
+.hyena-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fffefa;
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 30px auto;
+  max-width: 720px;
+}
+
+/* ハイエナカード内の画像 */
+.hyena-card img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ハイエナカードの情報エリア */
+.hyena-info {
+  flex: 1;
+}
+
+.hyena-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #d35400;
+  font-size: 18px;
+  border-bottom: 1px solid #ffa726;
+  padding-bottom: 4px;
+}
+
+.hyena-info ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.hyena-info li strong {
+  color: #e65100;
+}
+
+/* スマホなど狭い画面用のレイアウト調整 */
+@media screen and (max-width: 600px) {
+  .hyena-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hyena-card img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hyena-info {
+    width: 100%;
+  }
+}
+
+/* YouTuberロゴ一覧 */
+.youtuber-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.youtuber-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.youtuber-card p {
+  font-size: 15px;
+  margin: 10px 0 6px;
+  line-height: 1.2;
+  height: 2.4em;
+  overflow: hidden;
+}
+
+.youtuber-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.youtuber-card img:hover {
+  transform: scale(1.05);
+}
+
+/* ナビゲーションレイアウト */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-section h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  margin: 30px 0;
+}
+
+.search-section h2::before,
+.search-section h2::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+/* 共通見出しスタイル（h2）を線付きで整えるぺこ */
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  margin: 40px 0 20px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+/* 左右に線を入れるぺこ */
+h2::before,
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 15px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.home-button {
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2980b9;
+}
+.map-box {
+  margin-top: 15px;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hobby-section {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.slot-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.slot-images img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+:root {
+  --main-color: #3498db;
+  --accent-color: #ffa500;
+  --bg-light: #f4f4f4;
+  --bg-white: #fff;
+  --text-dark: #333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 20px;
+}
+
+/* ナビゲーション */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav-left {
+  display: flex;
+  gap: 10px;
+}
+
+.home-button {
+  background-color: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2c80b4;
+}
+
+/* 趣味セクションの枠 */
+.hobby-section {
+  background: var(--bg-white);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* セクション見出し */
+.hobby-section h2 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 共通リストスタイル */
+.hobby-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hobby-section ul li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  padding-left: 28px;
+  position: relative;
+}
+
+/* セクションごとのアイコン変更 */
+.hobby-section:nth-of-type(1) ul li::before { content: "🎰"; }
+.hobby-section:nth-of-type(2) ul li::before { content: "🎣"; }
+.hobby-section:nth-of-type(3) ul li::before { content: "🎮"; }
+.hobby-section:nth-of-type(4) ul li::before { content: "🚗"; }
+
+.hobby-section ul li::before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* 画像系 */
+.slot-images,
+.fish-images,
+.game-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.slot-images img,
+.fish-images img,
+.game-images img {
+  width: calc(40% - 10px); /* ← サイズは少しスリム */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.slot-images img:hover,
+.fish-images img:hover,
+.game-images img:hover {
+  transform: scale(1.03);
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  .slot-images img,
+  .fish-images img,
+  .game-images img {
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.hobby-link-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hobby-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #ff8c00, #ff6b6b, #ffa500);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  animation: pulse 2s infinite;
+}
+
+.hobby-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 107, 107, 0.5);
+}
+
+/* ゆらっと光るアニメ */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+  }
+}

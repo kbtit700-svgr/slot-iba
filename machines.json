@@ -1,0 +1,131 @@
+[
+  {
+    "name": "キングハナハナ",
+    "genre": "Aタイプ",
+    "manufacturer": "パイオニア",
+    "year": 2023,
+    "image": "img/kinghanahana.jpg",
+    "url": "https://p-town.dmm.com/machines/4311"
+  },
+  {
+    "name": "ドラゴンハナハナ閃光",
+    "genre": "Aタイプ",
+    "manufacturer": "パイオニア",
+    "year": 2023,
+    "image": "img/dragonhanahana.jpg",
+    "url": "https://p-town.dmm.com/machines/4453"
+  },
+  {
+    "name": "ハナハナホウオウ天翔",
+    "genre": "Aタイプ",
+    "manufacturer": "パイオニア",
+    "year": 2022,
+    "image": "img/hanahanahouou.jpg",
+    "url": "https://p-town.dmm.com/machines/4014"
+  },
+  {
+    "name": "アイムジャグラー",
+    "genre": "Aタイプ",
+    "manufacturer": "北電子",
+    "year": 2022,
+    "image": "img/imjuggler.jpg",
+    "url": "https://p-town.dmm.com/machines/3626"
+  },
+  {
+    "name": "ハッピージャグラー",
+    "genre": "Aタイプ",
+    "manufacturer": "北電子",
+    "year": 2022,
+    "image": "img/happyjuggler.jpg",
+    "url": "https://p-town.dmm.com/machines/4230"
+  },
+  {
+    "name": "マイジャグラー",
+    "genre": "Aタイプ",
+    "manufacturer": "北電子",
+    "year": 2021,
+    "image": "img/myjuggler.jpg",
+    "url": "https://p-town.dmm.com/machines/4029"
+  },
+  {
+    "name": "L ToLOVEるダークネス",
+    "genre": "スマスロ",
+    "manufacturer": "オーイズミ",
+    "year": 2024,
+    "image": "img/Toloveru.jpg",
+    "url": "https://p-town.dmm.com/machines/4571"
+  },
+  {
+    "name": "L からくりサーカス",
+    "genre": "スマスロ",
+    "manufacturer": "SANKYO",
+    "year": 2023,
+    "image": "img/karkuri.jpg",
+    "url": "https://p-town.dmm.com/machines/4360"
+  },
+  {
+    "name": "L 戦国乙女4 ",
+    "genre": "スマスロ",
+    "manufacturer": "平和",
+    "year": 2023,
+    "image": "img/otome.jpg",
+    "url": "https://p-town.dmm.com/machines/4395"
+  },
+  
+  {
+    "name": "スマスロ北斗の拳",
+    "genre": "スマスロ",
+    "manufacturer": "サミー",
+    "year": 2023,
+    "image": "img/hokuto.jpg",
+    "url": "https://p-town.dmm.com/machines/4301"
+  },
+  {
+    "name": "L 革命機ヴァルヴレイヴ",
+    "genre": "スマスロ",
+    "manufacturer": "SANKYO",
+    "year": 2022,
+    "image": "img/vvv.jpg",
+    "url": "https://p-town.dmm.com/machines/4244"
+  },
+  {
+    "name": "パチスロ炎炎ノ消防隊",
+    "genre": "6.5号機",
+    "manufacturer": "SANKYO",
+    "year": 2023,
+    "image": "img/eiennosyouboutai.jpg",
+    "url": "https://p-town.dmm.com/machines/4326"
+  },
+  {
+    "name": "パチスロ傷物語",
+    "genre": "6.5号機",
+    "manufacturer": "Sammy",
+    "year": 2023,
+    "image": "img/kizumonogatari.jpg",
+    "url": "https://p-town.dmm.com/machines/4390"
+  },
+  {
+    "name": "押忍！番長ZERO",
+    "genre": "6.5号機",
+    "manufacturer": "大都技研",
+    "year": 2022,
+    "image": "img/bantyou.jpg",
+    "url": "https://p-town.dmm.com/machines/4052"
+  },
+  {
+    "name": "甲鉄城のカバネリ",
+    "genre": "6.5号機",
+    "manufacturer": "サミー",
+    "year": 2022,
+    "image": "img/kabaneri.jpg",
+    "url": "https://p-town.dmm.com/machines/4160"
+  },
+  {
+    "name": "バイオハザード RE:2",
+    "genre": "6.5号機",
+    "manufacturer": "アデリオン",
+    "year": 2022,
+    "image": "img/bio.jpg",
+    "url": "https://p-town.dmm.com/machines/4217"
+  }
+]
